@@ -13,10 +13,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-service_obj = Service("C:/Drivers/chromedriver-win64/chromedriver.exe")
-driver = webdriver.Chrome(service=service_obj)
-
+#
+# service_obj = Service("C:/Drivers/chromedriver-win64/chromedriver.exe")
+# driver = webdriver.Chrome(service=service_obj)
+driver = webdriver.Chrome()
 driver.get("https://opensource-demo.orangehrmlive.com/")
 driver.maximize_window()
 
